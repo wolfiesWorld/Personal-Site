@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeAndre Jones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- 
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/leandre-jones/" target="_blank">Linkedin</a>
+            <a href="https://www.facebook.com/leandre.jones.338/" target="_blank">Facebook</a>
+            <a href="">Email</a>
+        </div>
+    </nav>
+    <hr> -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-black">
+        <!--I want navbar background opacity to be 0 then when the user scrolls I want it to appear-->
+        <div class="container-fluid fw-semibold">
+            <a class="navbar-brand active " href="#home">LJ</a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==== home ==== -->
+    <div id="home" class="container-fluid d-flex flex-column justify-content-center text-center text-white" style="background-image: url(/assets/images/andras-vas-Bd7gNnWJBkU-unsplash.jpg); height: 100vh; background-position: center; background-size: cover;">    
+        <div style="font-size: 4rem; font-weight: 500;">LeAndre Jones</div>
+            <div class="mb-5" style="font-size: 2.5rem;">Web Developer</div>
+            <div class="fs-1">
+                <!--place holder will change later-->
+                <a class="text-decoration-none" href="https://www.linkedin.com/in/leandre-jones/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="text-decoration-none" href="https://github.com/wolfiesWorld" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <!--Put scroll here sign-->
+            <div class="d-flex flex-column">
+                Scroll
+                <i class="fa-solid fa-chevron-down fs-3"></i>            
+            </div>
+    </div>
+
+    <!-- ==== about ==== -->
+    <div id="about" class="container-fluid text-center d-flex justify-content-center flex-column" style="height: 95vh; width: 70vw">
+        <div class="container-fluid" style="font-size: 2.5rem; font-weight: 400;">About Me</div>
+        <hr>
+        <div class="fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            teur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br> Hello there labore et dolore magna aliqua. Ut enim ad minim veniam,
+            teur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+
+    <!-- ==== skills ==== -->
+    
+    <div id="skills" class="container-fluid bg-body-secondary d-flex justify-content-center flex-column align-items-center" style="height: 95vh;">
+        <div  style="font-size: 2.5rem; font-weight: 400;">Skills</div>
+         <div class="d-flex justify-content-start">   
+            <div class="">
+                   <i id="react" class="fa-brands fa-react"></i>
+            </div>
+            <div class="">
+                    <i id="npm" class="fa-brands fa-npm"></i>
+            </div>
+            <div class="">
+                    <i id="git" class="fa-brands fa-github"></i>
+            </div>
+            <div class="">
+                   <i id="htm" class="fa-brands fa-html5"></i>
+            </div>
+            
+        </div>
+    </div> 
+                                       
+                    <i id="cs" class="fa-brands fa-css3"></i>
+                    <i id="js" class="fa-brands fa-js"></i>
+
+    <!-- ==== portfolio ==== -->
+    <div id="portfolio" class="row" style="background-color: orange; height: 90vh; width: 100vw;">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+    </div>
+    <!-- ==== resume ==== -->
+
+        <!--put link to resume here that will be easier my original idea was to have a timeline of where I have worked education etc but that 
+            will be for another project...
+
+
+            Glad you made it this far!
+            <button> Click to view or download my resume</button>
+        -->
+
+
+    <!-- ==== contact ==== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/31481e8157.js" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+</body>
+</html>

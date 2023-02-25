@@ -1,0 +1,51 @@
+:root{
+    --purple: #5858a7;
+    --pink: #ce6e9f;
+}
+*{
+    overflow-x: hidden;
+}
+.navbar-brand{
+    color: white;
+    font-size: 2rem;
+}
+.navbar-brand:hover{
+    color: var(--purple);
+}
+
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: var(--purple);
+}
+
+#home a{
+    color: white;
+}
+
+#home i:hover{
+    color: var(--pink)
+}
+
+.skills-section i{
+    cursor: pointer;
+    width: 200px;
+    height: auto;
+
+}
+
+ .skills-section i:hover{
+    color: var(--pink);
+    /* animation: animate 2s infinite linear; */
+    background-color: orange;
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
