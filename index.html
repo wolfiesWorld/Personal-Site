@@ -7,6 +7,7 @@
     <title>LeAndre Jones</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
+    
 </head>
 <body>
     <!-- 
@@ -20,20 +21,14 @@
     <nav class="navbar navbar-expand-lg fixed-top bg-black">
         <!--I want navbar background opacity to be 0 then when the user scrolls I want it to appear-->
         <div class="container-fluid fw-semibold">
-            <a class="navbar-brand active " href="#home">LJ</a>
+            <a class="navbar-brand active" href="#home">LJ</a>
         <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-5">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 fs-5">
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#resume">Resume</a>
@@ -41,65 +36,61 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
-                </ul>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0 fs-5 mt-1"> <li class="nav-item"><a class="text-decoration-none nav-link" href="https://www.linkedin.com/in/leandre-jones/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="nav-item"><a class="text-decoration-none nav-link" href="https://github.com/wolfiesWorld" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
             </div>
         </div>
     </nav>
 
     <!-- ==== home ==== -->
     <div id="home" class="container-fluid d-flex flex-column justify-content-center text-center text-white" style="background-image: url(/assets/images/andras-vas-Bd7gNnWJBkU-unsplash.jpg); height: 100vh; background-position: center; background-size: cover;">    
-        <div style="font-size: 4rem; font-weight: 500;">LeAndre Jones</div>
-            <div class="mb-5" style="font-size: 2.5rem;">Web Developer</div>
-            <div class="fs-1">
-                <!--place holder will change later-->
-                <a class="text-decoration-none" href="https://www.linkedin.com/in/leandre-jones/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a class="text-decoration-none" href="https://github.com/wolfiesWorld" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div>
+        <h1 id="heading-name" style="font-size: 4rem; font-weight: 500;">LeAndre Jones</h1>
+            <h2 class="mb-5" style="font-size: 2.5rem;">Web Developer</h2>
             <!--Put scroll here sign-->
-            <div class="d-flex flex-column">
+            <div id="scroll" class="d-flex flex-column">
                 Scroll
                 <i class="fa-solid fa-chevron-down fs-3"></i>            
             </div>
     </div>
 
     <!-- ==== about ==== -->
-    <div id="about" class="container-fluid text-center d-flex justify-content-center flex-column" style="height: 95vh; width: 70vw">
-        <div class="container-fluid" style="font-size: 2.5rem; font-weight: 400;">About Me</div>
+    <div id='about' class="container-fluid text-center" style="height:100vh; width: 80vw; margin-top:20%;">
+          <div class="wrapper">
+    <div class="static-txt">I'm a</div>
+    <ul class="dynamic-txts">
+      <li><span>Developer</span></li>
+      <li><span>Designer</span></li>
+      <li><span>Creative</span></li>
+      <li><span>Father</span></li>
+    </ul>
+  </div>
+        <!-- <div class="row">
+        <div class="col mb-3"><h1 style="font-size: 2.5rem;">About Me <hr></h1></div>
+        </div> -->
         <hr>
-        <div class="fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            teur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br> Hello there labore et dolore magna aliqua. Ut enim ad minim veniam,
-            teur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-    </div>
-
-    <!-- ==== skills ==== -->
-    
-    <div id="skills" class="container-fluid bg-body-secondary d-flex justify-content-center flex-column align-items-center" style="height: 95vh;">
-        <div  style="font-size: 2.5rem; font-weight: 400;">Skills</div>
-         <div class="d-flex justify-content-start">   
-            <div class="">
-                   <i id="react" class="fa-brands fa-react"></i>
-            </div>
-            <div class="">
-                    <i id="npm" class="fa-brands fa-npm"></i>
-            </div>
-            <div class="">
-                    <i id="git" class="fa-brands fa-github"></i>
-            </div>
-            <div class="">
-                   <i id="htm" class="fa-brands fa-html5"></i>
-            </div>
-            
+        <div class="row">
+        <div class="col mb-5">
+            <p class="fs-5">
+            Hi there! My name is LeAndre, and I'm a web developer with 2 years of experience. I have a passion for creating websites and applications that not only look great but also function smoothly and efficiently. I specialize in front-end development using HTML, CSS, and JavaScript, and I'm proficient in several popular frameworks such as React and Angular. Overall, I'm passionate about creating high-quality web experiences that solve problems and meet user needs. If you're looking for a web developer who can bring your ideas to life and help your business grow, I'd love to hear from you!
+            </p>
         </div>
-    </div> 
-                                       
-                    <i id="cs" class="fa-brands fa-css3"></i>
-                    <i id="js" class="fa-brands fa-js"></i>
+        </div>
+        <div class="col fs-1 d-flex justify-content-between bg-black p-3">
+                   <i id="react" class="fa-brands fa-react"></i>
+                    <i id="npm" class="fa-brands fa-npm"></i>
+                    <i id="git" class="fa-brands fa-github"></i>
+                   <i id="htm" class="fa-brands fa-html5"></i>
+                   <i id="css" class="fa-brands fa-css3"></i>
+                   <i id="js" class="fa-brands fa-js"></i> 
+        </div>
+        <!-- This wil be a box that appears underneath the box that contains the icons. When hovered it will show information like the name and my current skill level with it./'I know its not a good idea to show your skill level because it quote harms your chances but I feel as though if I assess my skills correctly it will show employers that I have some way to go and that I am well aware of what I need to improve upon/
+            
+            but yes my process for doing this will be mostly in javascript and when there is a hover or better yet a click effect it will show this info i think I want to assign variables to these icons and when I hover over it will do an animation but when I click it will show information this will continue to stay there until I click another icon. By default the box will not display on load until it is clicked '-->
+        <div  id="box" class="col">
 
-    <!-- ==== portfolio ==== -->
-    <div id="portfolio" class="row" style="background-color: orange; height: 90vh; width: 100vw;">
-        <div class="col">1</div>
-        <div class="col">2</div>
-        <div class="col">3</div>
+        </div> 
     </div>
     <!-- ==== resume ==== -->
 

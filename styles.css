@@ -3,7 +3,8 @@
     --pink: #ce6e9f;
 }
 *{
-    overflow-x: hidden;
+    padding:0;
+    margin:0
 }
 .navbar-brand{
     color: white;
@@ -24,28 +25,89 @@
     color: white;
 }
 
-#home i:hover{
-    color: var(--pink)
+#profile-pic{
+    border-radius: 100%;
+    
 }
 
-.skills-section i{
-    cursor: pointer;
-    width: 200px;
-    height: auto;
-
+#scroll{
+    position: absolute;
+    bottom: 5%;
+    right: 45%;
+    animation: scroll-anim 1s linear infinite alternate;
+    
 }
 
- .skills-section i:hover{
-    color: var(--pink);
-    /* animation: animate 2s infinite linear; */
-    background-color: orange;
+@keyframes scroll-anim{
+    /* 0%{}
+    50%{color: var(--pink); bottom: 2.5%}
+    100%{bottom: 0;} */
+    from{}
+    to{ bottom: 2.5%;}
 }
 
-@keyframes animate {
-  from {
-    transform: rotate(0deg);
+.wrapper{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+ 
+}
+.wrapper .static-txt{
+  color: black;
+  font-size: 60px;
+  font-weight: 500;
+}
+.wrapper .dynamic-txts{
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+  margin-left:1rem;
+  padding: 0;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: var(--pink);
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
   }
-  to {
-    transform: rotate(359deg);
+}
+.dynamic-txts li span{
+  position: relative;
+  /* margin: 5px 0; */
+  line-height: 90px;
+  margin: 0;
+  padding: 0;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 110%;
+  width: 100%;
+  background: #fff;
+  border-left: 2px solid var(--purple);
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
   }
+  100%{
+    left: 0;
+  }
+}
+
+#box{
+    height: 300px;
+    width: auto;
+    background-color: gray;
 }
