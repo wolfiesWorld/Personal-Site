@@ -111,3 +111,57 @@
     width: auto;
     background-color: gray;
 }
+
+#react:hover{
+    animation: spin 3s linear infinite;
+    color: #61DAFB;
+}
+#npm:hover{
+    /* color: #cc3838; */
+    animation: filled 3s linear infinite alternate;
+}
+#git:hover{
+  animation: bounce 1s ease forwards;
+}
+
+#js:hover{
+  animation: speed 5s linear infinite;
+}
+
+@keyframes spin {
+    from{}
+    to{transform: rotate(180deg);}
+}
+
+@keyframes filled {
+    from{
+        
+    }
+    to{
+        color: #cc3838;
+    }
+}
+@keyframes bounce {
+  0%{
+
+  }50%{
+    transform: scale(.5);
+  }
+  60%{
+    transform: scale(1.25);
+  }
+  80%{
+    transform: scale(.8);
+  }
+  95%{
+    transform: scale(1.15);
+  }
+  100%{
+    transform: scale(1);
+    color: white;
+  }
+}
+
+@keyframes speed {
+  
+}
