@@ -32,18 +32,15 @@
 
 #scroll{
     position: absolute;
-    bottom: 5%;
-    right: 45%;
+    bottom: 30px;
     animation: scroll-anim 1s linear infinite alternate;
     
 }
 
 @keyframes scroll-anim{
-    /* 0%{}
-    50%{color: var(--pink); bottom: 2.5%}
-    100%{bottom: 0;} */
-    from{}
-    to{ bottom: 2.5%;}
+    0%{}
+    /* 50%{color: var(--pink); bottom: 2.5%} */
+    100%{bottom: 0;}
 }
 
 .wrapper{
@@ -106,25 +103,20 @@
   }
 }
 
-#box{
-    height: 300px;
-    width: auto;
-    background-color: gray;
-}
 
-#react:hover{
+#react{
     animation: spin 3s linear infinite;
     color: #61DAFB;
 }
-#npm:hover{
+#npm{
     /* color: #cc3838; */
     animation: filled 3s linear infinite alternate;
 }
-#git:hover{
+#git{
   animation: bounce 1s ease forwards;
 }
 
-#js:hover{
+#js{
   animation: speed 5s linear infinite;
 }
 
@@ -158,10 +150,14 @@
   }
   100%{
     transform: scale(1);
-    color: white;
+    color: var(--pink);
   }
 }
 
-@keyframes speed {
+/* @keyframes speed {
   
+} */
+
+.underline{
+  border-bottom: 1px solid black;
 }
